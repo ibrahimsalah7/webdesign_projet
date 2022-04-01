@@ -6,99 +6,182 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
+        html, body {
+     min-height: 100%;
+}
+        .txtboxes {
+            outline: none;
+            overflow: visible;
+            box-shadow: none;
+            font-weight: 300;
+            background-color: transparent;
+            border-bottom:1px solid #000000;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            margin-top: 20px;
+            font-size: 20px;
+            
+            
+        }
+        #submit {
+            background-color: #000000;
+            border: none;
+            border-radius:10px;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+            cursor: pointer;
+        }
+        
+        #txt7birthday {
+            margin-left: 10px;
+        }
         .auto-style1 {
-            width: 97%;
-        }
-        .auto-style2 {
-            height: 23px;
-        }
-        .auto-style3 {
-            height: 26px;
+            width: 471px;
+            height: 407px;
         }
         .auto-style4 {
-            text-align: center;
+            width: 446px;
         }
         .auto-style5 {
-            height: 26px;
-            text-align: center;
+            height: 62px;
+            text-align: left;
+            width: 446px;
         }
-        .auto-style6 {
-            height: 23px;
-            text-align: center;
+        .auto-style7 {
+            text-align: left;
+            height: 61px;
+            width: 446px;
         }
+        .auto-style11 {
+            text-align: left;
+            height: 27px;
+            width: 446px;
+        }
+        .auto-style17 {
+            text-align: left;
+            height: 14px;
+            width: 446px;
+        }
+        form {
+            background-color: #fffdd5;
+            margin-left: 450px; 
+            margin-top: 20px;
+            width: 900px;
+            height: 400px;
+            border-radius: 50px;
+        }
+        html {
+            background-image:src();
+        }
+        
+        
+        .auto-style19 {
+            width: 584px;
+            height: 460px;
+        }
+        
+        
+        .auto-style20 {
+            text-align: left;
+            height: 44px;
+            width: 446px;
+        }
+        .auto-style22 {
+            text-align: left;
+            height: 52px;
+            width: 446px;
+        }
+        .auto-style24 {
+            text-align: left;
+            height: 24px;
+            width: 446px;
+        }
+        h1 {
+            margin-left: 660px;
+            margin-top: 50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        
+        
     </style>
 </head>
-<body style="height: 242px; width: 932px">
-    <form id="form1" runat="server">
+<body >
+    <h1>Sign UP</h1>
+    <form id="form1" runat="server" class="auto-style19" >
         <div>
-            <table class="auto-style1">
+            <table class="auto-style1" align="center" >
                 <tr>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt1fname" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" Height="19px" OnTextChanged="txt1fname_TextChanged" Width="149px">First Name</asp:TextBox>
+                    <td class="auto-style11">
+                        <asp:TextBox ID="txt1fname" runat="server" CssClass="txtboxes" Height="19px" OnTextChanged="txt1fname_TextChanged" Width="210px" placeholder="First name"></asp:TextBox>
+                        <asp:TextBox ID="txt2lname" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="210px" placeholder="Last name" Height="27px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
                 
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt2lname" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="148px">Last Name</asp:TextBox>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txt3username" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="213px" placeholder="Username"></asp:TextBox>
+                        <asp:TextBox ID="txt4email" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="214px" TextMode="Email" placeholder="Email"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
                     
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt3username" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="146px">Username</asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style17">
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Height="25px" Font-Size="Large" RepeatDirection="Horizontal">
+                            <asp:ListItem>Male</asp:ListItem><asp:ListItem>Female</asp:ListItem>
+                        </asp:RadioButtonList>
+                        </td>
                
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt4email" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" Width="146px">Email</asp:TextBox>
+                    <td class="auto-style20">
+                        <asp:TextBox ID="txt5password" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" TextMode="Password" Width="240px" placeholder="Password"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
        
                 </tr>
                 <tr>
-                    <td class="auto-style6">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" Width="727px">
-                            <asp:ListItem>Male</asp:ListItem>
-                            <asp:ListItem>Female</asp:ListItem>
-                        </asp:RadioButtonList>
+                    <td class="auto-style22">
+                        
+                        <asp:TextBox ID="txt6repassword" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" style="margin-top: 0px" TextMode="Password" Width="238px" placeholder="Retype-Password"></asp:TextBox>
+                        
                     </td>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
             
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt5password" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" TextMode="Password" Width="147px">Password</asp:TextBox>
+                    <td class="auto-style24">
+                        <asp:Label ID="Label1" runat="server" Text="Birthday:" Font-Bold="True" Font-Size="Large" ></asp:Label>
+                        <asp:TextBox ID="txt7birthday" runat="server" CssClass="txtboxes" TextMode="Date" Width="232px" ></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
                   
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:TextBox ID="txt6repassword" runat="server" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" style="margin-top: 0px" TextMode="Password" Width="147px">Enter password again</asp:TextBox>
+                        <asp:Label ID="Label2" runat="server" Text="Upload photo" Font-Bold="True" Font-Size="Large" ></asp:Label>
+                        <asp:FileUpload ID="FileUpload1" runat="server" BackColor="#FFFDD5" /> 
                     </td>
-                    <td class="auto-style3"></td>
-                    <td class="auto-style3"></td>
                     
                 </tr>
                 <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Button ID="submit" runat="server" Text="Sign up" Width="437px" />
+                    </td>
                    
                 </tr>
             </table>
         </div>
     </form>
+    
 </body>
 </html>
