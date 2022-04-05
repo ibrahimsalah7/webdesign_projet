@@ -7,8 +7,9 @@
     <title></title>
     <style type="text/css">
         html, body {
-     min-height: 100%;
-}
+            min-height: 100%;
+           background-image: url('background.png');
+        }
         .txtboxes {
             outline: none;
             overflow: visible;
@@ -43,6 +44,11 @@
             
             cursor: pointer;
         }
+        #Button1,#button2 {
+            border-radius: 12px;
+            background-color: black;
+            
+        }
         
         #txt7birthday {
             margin-left: 10px;
@@ -75,12 +81,12 @@
             width: 446px;
         }
         form {
-            background-color: #fffdd5;
+            background-color: #ffe2ce;
             margin-left: 450px; 
             margin-top: 20px;
             width: 900px;
             height: 400px;
-            border-radius: 50px;
+            border-radius: 15px;
         }
         html {
             background-image:src();
@@ -89,7 +95,7 @@
         
         .auto-style19 {
             width: 584px;
-            height: 460px;
+            height: 494px;
         }
         
         
@@ -113,7 +119,17 @@
             margin-top: 50px;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
         
+        
+        
+        #Button2 {
+            border-radius: 12px;
+            background-color: black;
+            
+        }
+        
+                
         
         
     </style>
@@ -148,6 +164,9 @@
                 <tr>
                     <td class="auto-style20">
                         <asp:TextBox ID="txt5password" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" TextMode="Password" Width="240px" placeholder="Password"></asp:TextBox>
+                        
+                        <asp:CheckBox ID="CheckBox1" runat="server" onclick="showPassword(1)" Text="Show" />
+                        
                     </td>
        
                 </tr>
@@ -155,6 +174,8 @@
                     <td class="auto-style22">
                         
                         <asp:TextBox ID="txt6repassword" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" style="margin-top: 0px" TextMode="Password" Width="238px" placeholder="Retype-Password"></asp:TextBox>
+                        
+                        <asp:CheckBox ID="CheckBox2" runat="server" onclick="showPassword(2)" Text="Show" />
                         
                     </td>
             
@@ -169,7 +190,15 @@
                 <tr>
                     <td class="auto-style5">
                         <asp:Label ID="Label2" runat="server" Text="Upload photo" Font-Bold="True" Font-Size="Large" ></asp:Label>
-                        <asp:FileUpload ID="FileUpload1" runat="server" BackColor="#FFFDD5" /> 
+                        <asp:FileUpload ID="FileUpload1" runat="server" BackColor="#FFE2CE" /> 
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <asp:RadioButtonList ID="RadioButtonList2" runat="server" Height="25px" Font-Size="Large" RepeatDirection="Horizontal">
+                            <asp:ListItem>Broker</asp:ListItem><asp:ListItem>client</asp:ListItem>
+                        </asp:RadioButtonList>
                     </td>
                     
                 </tr>
@@ -182,6 +211,23 @@
             </table>
         </div>
     </form>
-    
+    <script>
+        function showPassword(id) {
+            
+            var x;
+            if (id == 1) {
+                x = document.getElementById("txt5password");
+            }
+            else if (id == 2) {
+                x = document.getElementById("txt6repassword");
+            }
+            if (x.type === "password") {
+            x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>
