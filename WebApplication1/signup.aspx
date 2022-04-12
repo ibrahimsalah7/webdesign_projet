@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         html, body {
-            min-height: 100%;
+           min-height: 100%;
            background-image: url('background.png');
         }
         .txtboxes {
@@ -41,7 +41,6 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            
             cursor: pointer;
         }
         #Button1,#button2 {
@@ -88,11 +87,7 @@
             height: 400px;
             border-radius: 15px;
         }
-        html {
-            background-image:src();
-        }
-        
-        
+
         .auto-style19 {
             width: 584px;
             height: 494px;
@@ -100,9 +95,9 @@
         
         
         .auto-style20 {
-            text-align: left;
             height: 44px;
             width: 446px;
+            text-align: left;
         }
         .auto-style22 {
             text-align: left;
@@ -118,20 +113,18 @@
             margin-left: 660px;
             margin-top: 50px;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        
-        
+        }  
         
         #Button2 {
             border-radius: 12px;
             background-color: black;
             
         }
-        
-                
-        
-        
+     
+        .auto-style25 {
+            text-align: center;
+        }
+     
     </style>
 </head>
 <body >
@@ -139,6 +132,7 @@
     <form id="form1" runat="server" class="auto-style19" >
         <div>
             <table class="auto-style1" align="center" >
+                <tbody class="auto-style25">
                 <tr>
                     <td class="auto-style11">
                         <asp:TextBox ID="txt1fname" runat="server" CssClass="txtboxes" Height="19px" OnTextChanged="txt1fname_TextChanged" Width="210px" placeholder="First name"></asp:TextBox>
@@ -215,18 +209,22 @@
         function showPassword(id) {
             
             var x;
+            var y;
             if (id == 1) {
                 x = document.getElementById("txt5password");
+                y = document.getElementById("CheckBox1");
             }
             else if (id == 2) {
                 x = document.getElementById("txt6repassword");
             }
-            if (x.type === "password") {
-            x.type = "text";
+            if (x.type == "password") {
+                x.type = "text";
             }
             else {
                 x.type = "password";
+                
             }
+            
         }
     </script>
 </body>

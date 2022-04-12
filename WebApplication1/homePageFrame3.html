@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        #btn1 {
+            background-color: #43a379;
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        label {
+            color: black;
+            padding: 8px;
+            font-family: Arial;
+        }
+        table {
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="check in">chick in:</label></td>
+                <td><label for="check out">chick out:</label></td>
+                <td><label for="adults">Adults:</label></td>
+                <td><label for="Children">Children:</label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="date" id="check_in" name="check in"></td>
+                <td><input type="date" id="check_out" name="check out"></td>
+                <td><input type="number" id="adults" name="adults" placeholder="Adults"></td>
+                <td><input type="number" id="Children" name="Children" placeholder="Children"></td>
+                <td><button id="btn1" type="submit">Search</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
