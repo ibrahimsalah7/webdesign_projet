@@ -17,7 +17,7 @@
         }
 
         #submit {
-            background-color: #43a379;
+            background-color: #0C1D2C;
             border: none;
             color: white;
             padding: 5px 20px;
@@ -92,18 +92,19 @@
                 <tbody>
 
                 <tr >
-                    <td style="background-color:#04AA6D;" >
+                    <td style="background-color:#0C1D2C;" >
                         <asp:Label ID="Label3" runat="server" Text="First name: " CssClass="labels"></asp:Label>
                     </td>
                     <td >
                         <asp:TextBox ID="txt1fname" runat="server" CssClass="auto-style1"  OnTextChanged="txt1fname_TextChanged"  placeholder="First name" Width="480" ></asp:TextBox>
+                       
                     </td>
                     <td >
                         &nbsp;</td>
                 
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                        <asp:Label ID="Label4" runat="server" Text="Last name: " CssClass="labels"></asp:Label></td>
                     <td >
                         <asp:TextBox ID="txt2lname" runat="server" CssClass="auto-style1" OnTextChanged="txt1fname_TextChanged" placeholder="Last name" Width="480"  ></asp:TextBox>
@@ -113,7 +114,7 @@
                 
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;" >
+                    <td style="background-color:#0C1D2C;" >
                         <asp:Label ID="Label5" runat="server" Text="Username: " CssClass="labels"></asp:Label></td>
                     
                     <td >
@@ -125,7 +126,7 @@
                     
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                         <asp:Label ID="Label10" runat="server" Text="Email: " CssClass="labels"></asp:Label>
                     </td>
                     
@@ -138,7 +139,7 @@
                     
                 </tr>
                 <tr>
-                    <td class="auto-style3" style="background-color:#04AA6D;">
+                    <td class="auto-style3" style="background-color:#0C1D2C;">
                         <asp:Label ID="Label6" runat="server" Text="Gender: " CssClass="labels"></asp:Label>
                         </td>
                
@@ -153,7 +154,7 @@
                
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                         <asp:Label ID="Label7" runat="server" Text="Password: " CssClass="labels"></asp:Label>
                         
                     </td>
@@ -170,7 +171,7 @@
        
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                         
                         <asp:Label ID="Label8" runat="server" Text="Re-type Password: " CssClass="labels"></asp:Label>
                         
@@ -190,7 +191,7 @@
             
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                         <asp:Label ID="Label1" runat="server" Text="Birthday:" CssClass="labels"></asp:Label>
                     </td>
                   
@@ -203,7 +204,7 @@
                   
                 </tr>
                 <tr>
-                    <td style="background-color:#04AA6D;">
+                    <td style="background-color:#0C1D2C;">
                         <asp:Label ID="Label2" runat="server" CssClass="labels">Upload photo</asp:Label>
                     </td>
                     
@@ -216,7 +217,7 @@
                     
                 </tr>
                 <tr>
-                    <td class="auto-style4" style="background-color:#04AA6D; padding:10px" >
+                    <td class="auto-style4" style="background-color:#0C1D2C; padding:10px" >
                         <asp:Label ID="Label9" runat="server" CssClass="labels">Portal</asp:Label>
                     </td>
                     

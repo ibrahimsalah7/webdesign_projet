@@ -17,7 +17,7 @@
         }
 
         #submit {
-            background-color: #43a379;
+            background-color: #0C1D2C;
             border: none;
             color: white;
             padding: 5px 20px;
@@ -107,7 +107,7 @@
             <table >
                 <tbody>
                 <tr>
-                    <td style="background-color:#04AA6D;" class="auto-style5">
+                    <td style="background-color:#0C1D2C;" class="auto-style5">
                         <asp:Label ID="Label10" runat="server" Text="Email: " CssClass="labels"></asp:Label>
                     </td>                    
                     <td >
@@ -118,7 +118,7 @@
                 </tr>
                
                 <tr>
-                    <td style="background-color:#04AA6D;" class="auto-style5">
+                    <td style="background-color:#0C1D2C;" class="auto-style5">
                         <asp:Label ID="Label7" runat="server" Text="Password: " CssClass="labels"></asp:Label>           
                     </td>
 
