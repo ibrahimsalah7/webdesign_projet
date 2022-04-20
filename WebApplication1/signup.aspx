@@ -219,7 +219,7 @@
                     </td>
        
                     <td >
-                        <asp:RegularExpressionValidator ID="PasswordRegValidator" runat="server" ControlToValidate="txt5password" ErrorMessage="Not valid" ForeColor="Red" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="PasswordRegValidator" runat="server" ControlToValidate="txt5password" ErrorMessage="Not valid" ForeColor="White" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"></asp:RegularExpressionValidator>
                     </td>
        
                 </tr>
