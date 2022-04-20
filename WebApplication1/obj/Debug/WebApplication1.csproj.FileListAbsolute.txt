@@ -54,7 +54,6 @@ E:\20193802\webdesign_projet\WebApplication1\bin\Microsoft.CodeDom.Providers.Dot
 E:\20193802\webdesign_projet\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\20193802\webdesign_projet\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
 E:\20193802\webdesign_projet\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
-E:\20193802\webdesign_projet\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 E:\20193802\webdesign_projet\WebApplication1\obj\Debug\WebApplication1.dll
 E:\20193802\webdesign_projet\WebApplication1\obj\Debug\WebApplication1.pdb
 D:\Education\FUE\Semester 6\Design of web based application\project\webdesign_projet\WebApplication1\bin\WebApplication1.dll.config

@@ -71,6 +71,7 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="contacts.html" />
     <Content Include="homePage.html" />
     <Content Include="homePageFrame1.html" />
     <Content Include="homePageFrame2.html" />
