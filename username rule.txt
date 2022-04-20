@@ -1,0 +1,2 @@
+A valid username should start with an alphabet
+All other characters can be alphabets, numbers or an underscore

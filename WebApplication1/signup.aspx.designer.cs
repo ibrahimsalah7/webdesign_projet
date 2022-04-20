@@ -42,6 +42,24 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.TextBox txt1fname;
 
         /// <summary>
+        /// FnameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FnameValidator;
+
+        /// <summary>
+        /// FnameRegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator FnameRegValidator;
+
+        /// <summary>
         /// Label4 control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,24 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt2lname;
+
+        /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
+        /// LnameRegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator LnameRegValidator;
 
         /// <summary>
         /// Label5 control.
@@ -78,6 +114,24 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.TextBox txt3username;
 
         /// <summary>
+        /// UsernameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UsernameValidator;
+
+        /// <summary>
+        /// UsernameRegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator UsernameRegValidator;
+
+        /// <summary>
         /// Label10 control.
         /// </summary>
         /// <remarks>
@@ -96,6 +150,24 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.TextBox txt4email;
 
         /// <summary>
+        /// MailValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator MailValidator;
+
+        /// <summary>
+        /// MailRegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator MailRegValidator;
+
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -105,13 +177,22 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// RadioButtonList1 control.
+        /// gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList gender;
+
+        /// <summary>
+        /// GenderValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator GenderValidator;
 
         /// <summary>
         /// Label7 control.
@@ -141,6 +222,24 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
 
         /// <summary>
+        /// PasswordValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordValidator;
+
+        /// <summary>
+        /// PasswordRegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PasswordRegValidator;
+
+        /// <summary>
         /// Label8 control.
         /// </summary>
         /// <remarks>
@@ -168,6 +267,24 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
 
         /// <summary>
+        /// RepasswordValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RepasswordValidator;
+
+        /// <summary>
+        /// RepasswordValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator RepasswordValidator1;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -184,6 +301,15 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt7birthday;
+
+        /// <summary>
+        /// BirthdayValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BirthdayValidator;
 
         /// <summary>
         /// Label2 control.
@@ -213,13 +339,22 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// RadioButtonList2 control.
+        /// portal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
+        protected global::System.Web.UI.WebControls.RadioButtonList portal;
+
+        /// <summary>
+        /// PortalValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PortalValidator;
 
         /// <summary>
         /// submit control.
@@ -229,5 +364,14 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submit;
+
+        /// <summary>
+        /// result_label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label result_label;
     }
 }
