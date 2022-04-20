@@ -104,7 +104,7 @@
 
             result_label.Text = "Account has been created successfully";
         }
-
+            
     </script>
 </head>
 <body >
