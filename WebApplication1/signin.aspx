@@ -141,7 +141,7 @@
                         &nbsp;</td>
 
                     <td >
-                        <asp:Button ID="submit" runat="server" Text="Sign in" OnClick="login()" Width="480" />
+                        <asp:Button ID="submit" runat="server" Text="Sign in"  Width="480" />
                     </td>
                 </tr>
                     <tr>
