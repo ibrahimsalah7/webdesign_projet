@@ -73,9 +73,9 @@
     </Content>
     <Content Include="contacts.html" />
     <Content Include="homePage.html" />
-    <Content Include="homePageFrame1.html" />
-    <Content Include="homePageFrame2.html" />
-    <Content Include="homePageFrame3.html" />
+    <Content Include="frame1.html" />
+    <Content Include="frame2.html" />
+    <Content Include="frame3.html" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
     <Content Include="signin.aspx" />
