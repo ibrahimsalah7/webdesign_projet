@@ -6,82 +6,77 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-       
+       body {
+            display:flex;
+            justify-content: center;
+            margin-top:130px;
+        }
         .txtboxes {
-            border-radius: 2px;
-            padding:10px 10px;
-            border-color: #ebebeb;
-            border-style: solid; 
-            width:320px;
+            width: 100%;
+            height: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: solid;
+            border-radius:10px;
+            background-color:transparent;
+            text-align:center;
+            font-size:16px;
+            font-weight:bold;
             
         }
-
+            .txtboxes:hover {
+                background-color:#ffc0cb;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
         #submit {
-            background-color: #0C1D2C;
+            background-color: #dc143c;
             border: none;
             color: white;
             padding: 5px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: bold;
             margin: 4px 2px;
             cursor: pointer;
-            width:200px;
-            
+            border-radius: 10px;
+            margin-left: 310px;
+            width:120px;
+        }
+        #submit:hover {
+            background-color: black;
+            color: white;
         }
       
-        h1 {
-            margin-left: 660px;
-            margin-top: 50px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }  
-
-        body {
-            background-image: url("photos/1.png");
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-        }
-
-        table {
-            margin-right: auto;
-            margin-left: auto;
-            background-color: white;
-            height: auto;
-            border-radius: 10px;
-        }
-
         .auto-style1 {
-            border-radius: 2px;
-            padding: 10px 10px;
-            border-color: #ebebeb;
             border-style: solid;
+            border-color: inherit;
+            border-width: medium;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
         }
-
-        .auto-style2 {
-            float: left;
-        }
-        .auto-style3 {
-            text-align: justify;
-        }
-        
-        .auto-style4 {
-            text-align: left;
-        }
-
-         .labels{
-            color: white;
-            padding: 8px;
-            font-family: Arial;
+        #portal {
+            margin-left:180px;
+            font-size:24px;
             font-weight:bold;
         }
-        
-     
-        
-        
-     
-    </style>
+        #gender {
+            margin-left: 180px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+         .portItem:hover{
+             background-color:black;
+             color:white;
+         }
+        </style>
     <script  runat ="server">
 
         protected void submit_Click(Object sender, EventArgs e){
@@ -108,19 +103,17 @@
     </script>
 </head>
 <body >
-    <div id="bg">
-    <h1>Sign UP</h1>
-    <form id="form1" runat="server" class="auto-style19" >
+ 
+    <form id="form1" runat="server" >
         <div>
             <table >
                 <tbody>
 
                 <tr >
-                    <td style="background-color:#0C1D2C;" >
-                        <asp:Label ID="Label3" runat="server" Text="First name: " CssClass="labels"></asp:Label>
-                    </td>
                     <td >
-                        <asp:TextBox ID="txt1fname" runat="server" CssClass="auto-style1"  OnTextChanged="txt1fname_TextChanged"  placeholder="First name" Width="480" ></asp:TextBox>
+                        &nbsp;</td>
+                    <td >
+                        <asp:TextBox ID="txt1fname" runat="server" CssClass="txtboxes"  OnTextChanged="txt1fname_TextChanged"  placeholder="First name" Width="480" ></asp:TextBox>
                        
                     </td>
                     <td >
@@ -133,10 +126,10 @@
                 
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
-                       <asp:Label ID="Label4" runat="server" Text="Last name: " CssClass="labels"></asp:Label></td>
                     <td >
-                        <asp:TextBox ID="txt2lname" runat="server" CssClass="auto-style1" OnTextChanged="txt1fname_TextChanged" placeholder="Last name" Width="480"  ></asp:TextBox>
+                        &nbsp;</td>
+                    <td >
+                        <asp:TextBox ID="txt2lname" runat="server" CssClass="txtboxes"  OnTextChanged="txt1fname_TextChanged" placeholder="Last name" Width="480"  ></asp:TextBox>
                     </td>
                     <td >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt2lname" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -148,11 +141,11 @@
                 
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;" >
-                        <asp:Label ID="Label5" runat="server" Text="Username: " CssClass="labels"></asp:Label></td>
+                    <td >
+                        &nbsp;</td>
                     
                     <td >
-                        <asp:TextBox ID="txt3username" runat="server" CssClass="auto-style1" OnTextChanged="txt1fname_TextChanged" placeholder="Username" Width="480" ></asp:TextBox>
+                        <asp:TextBox ID="txt3username" runat="server" CssClass="txtboxes"  OnTextChanged="txt1fname_TextChanged" placeholder="Username" Width="480" ></asp:TextBox>
                     </td>
                     
                     <td >
@@ -165,9 +158,8 @@
                     
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
-                        <asp:Label ID="Label10" runat="server" Text="Email: " CssClass="labels"></asp:Label>
-                    </td>
+                    <td >
+                        &nbsp;</td>
                     
                     <td >
                         <asp:TextBox ID="txt4email" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged"  TextMode="Email" placeholder="Email" Width="480" ></asp:TextBox>
@@ -183,13 +175,12 @@
                     
                 </tr>
                 <tr>
-                    <td class="auto-style3" style="background-color:#0C1D2C;">
-                        <asp:Label ID="Label6" runat="server" Text="Gender: " CssClass="labels"></asp:Label>
-                        </td>
+                    <td >
+                        &nbsp;</td>
                
                     <td class="auto-style3" >
-                        <asp:RadioButtonList ID="gender" runat="server" CssClass="auto-style2" RepeatDirection="Horizontal" Width="176px">
-                            <asp:ListItem>Male</asp:ListItem><asp:ListItem>Female</asp:ListItem>
+                        <asp:RadioButtonList ID="gender" runat="server" CssClass="gender" RepeatDirection="Horizontal" Width="195px">
+                            <asp:ListItem class="portItem">Male</asp:ListItem><asp:ListItem class="portItem">Female</asp:ListItem>
                         </asp:RadioButtonList>
                         </td>
                
@@ -202,10 +193,8 @@
                
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
-                        <asp:Label ID="Label7" runat="server" Text="Password: " CssClass="labels"></asp:Label>
-                        
-                    </td>
+                    <td >
+                        &nbsp;</td>
        
                     <td >
                         <asp:TextBox ID="txt5password" runat="server" CssClass="txtboxes" OnTextChanged="txt1fname_TextChanged" TextMode="Password"  placeholder="Password" Width="480" ></asp:TextBox>
@@ -224,11 +213,9 @@
        
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
+                    <td >
                         
-                        <asp:Label ID="Label8" runat="server" Text="Re-type Password: " CssClass="labels"></asp:Label>
-                        
-                    </td>
+                        &nbsp;</td>
             
                     <td >
                         
@@ -250,12 +237,11 @@
             
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
-                        <asp:Label ID="Label1" runat="server" Text="Birthday:" CssClass="labels"></asp:Label>
-                    </td>
+                    <td >
+                        &nbsp;</td>
                   
                     <td >
-                        <asp:TextBox ID="txt7birthday" runat="server" CssClass="txtboxes" TextMode="Date" ></asp:TextBox>
+                        <asp:TextBox ID="txt7birthday" runat="server" CssClass="auto-style1" TextMode="Date" Width="482px" ></asp:TextBox>
                     </td>
                   
                     <td >
@@ -267,12 +253,12 @@
                   
                 </tr>
                 <tr>
-                    <td style="background-color:#0C1D2C;">
-                        <asp:Label ID="Label2" runat="server" CssClass="labels">Upload photo</asp:Label>
-                    </td>
+                    <td >
+                        &nbsp;</td>
                     
                     <td >
-                        <asp:FileUpload ID="FileUpload1" runat="server" /> 
+                        <asp:Label ID="Label2" runat="server"  style="font-size:16px;font-weight:bold;margin-left:20px;">Upload photo</asp:Label>
+                        <asp:FileUpload ID="FileUpload1" runat="server" Style="margin-left:40px; font-size:20px;font-weight:bold;" /> 
                     </td>
                     
                     <td >
@@ -283,13 +269,12 @@
                     
                 </tr>
                 <tr>
-                    <td class="auto-style4" style="background-color:#0C1D2C; padding:10px" >
-                        <asp:Label ID="Label9" runat="server" CssClass="labels">Portal</asp:Label>
-                    </td>
+                    <td  >
+                        &nbsp;</td>
                     
                     <td class="auto-style4" >
                         <asp:RadioButtonList ID="portal" runat="server" RepeatDirection="Horizontal" >
-                            <asp:ListItem Value="B">Broker</asp:ListItem><asp:ListItem Value="C">Client</asp:ListItem>
+                            <asp:ListItem class="portItem" Value="B">Broker</asp:ListItem><asp:ListItem class="portItem" Value="C">Client</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                     
@@ -302,11 +287,8 @@
                     
                 </tr>
                 <tr>
-                    <td >
-                        &nbsp;</td>
-
-                    <td >
-                        <asp:Button ID="submit" runat="server" Text="Sign up" Width="480" OnClick="submit_Click" />
+                    <td colspan="2" >
+                        <asp:Button ID="submit" runat="server" Text="Sign up"  OnClick="submit_Click" />
                     </td>
 
                 </tr>
@@ -320,7 +302,7 @@
         </div>
         
     </form>
-        </div>
+
     <script>
         function showPassword(id) {
             

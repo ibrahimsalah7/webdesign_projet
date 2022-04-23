@@ -73,8 +73,7 @@
     </Content>
     <Content Include="contacts.html" />
     <Content Include="homePage.html" />
-    <Content Include="frame1.html" />
-    <Content Include="frame2.html" />
+    <Content Include="Frame1.html" />
     <Content Include="frame3.html" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
