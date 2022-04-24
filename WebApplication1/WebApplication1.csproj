@@ -71,10 +71,14 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="background.png" />
     <Content Include="contacts.html" />
+    <Content Include="Homeframe4.html" />
+    <Content Include="HomeFrame5.html" />
     <Content Include="homePage.html" />
-    <Content Include="Frame1.html" />
-    <Content Include="frame3.html" />
+    <Content Include="HomeFrame1.html" />
+    <Content Include="HomeFrame3.html" />
+    <Content Include="Homeframe2.html" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
     <Content Include="signin.aspx" />

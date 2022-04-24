@@ -49,7 +49,7 @@
             background-color: black;
             color: white;
         }
-      
+     
         .auto-style1 {
             border-style: solid;
             border-color: inherit;
@@ -101,9 +101,10 @@
         }
             
     </script>
+    
 </head>
 <body >
- 
+
     <form id="form1" runat="server" >
         <div>
             <table >
